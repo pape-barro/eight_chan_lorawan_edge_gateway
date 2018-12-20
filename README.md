@@ -46,7 +46,7 @@ In order to establish a SPI connection between the iC880A-SPI and the host syste
 following pins have to be used as minimum wiring set:
 
 
-![1](https://github.com/pape-barro/eight_chan_lorawan_edge_gateway/content/1.png)
+![1](https://github.com/pape-barro/eight_chan_lorawan_edge_gateway/blob/master/content/1.png)
 
 The power pins (21, 22) have to be connected to a power source that is able to provide more than 700 mA.
 
