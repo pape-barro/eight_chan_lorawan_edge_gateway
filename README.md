@@ -46,15 +46,15 @@ In order to establish a SPI connection between the iC880A-SPI and the host syste
 following pins have to be used as minimum wiring set:
 
 
-![1](https://github.com/pape-barro/eight_chan_lorawan_edge_gateway/tree/master/content/1.png)
+![1](https://github.com/pape-barro/eight_chan_lorawan_edge_gateway/content/1.png)
 
 The power pins (21, 22) have to be connected to a power source that is able to provide more than 700 mA.
 
-![2](https://github.com/pape-barro/eight_chan_lorawan_edge_gateway/tree/master/content/2.png)
+![2](https://github.com/pape-barro/eight_chan_lorawan_edge_gateway/content/2.png)
 
 Therefore it is recommended to choose a proper power supply that is able to supply the iC880A-SPI and the host system (e.g. Raspberry PI) at the same time.
 
-![3](https://github.com/pape-barro/eight_chan_lorawan_edge_gateway/tree/master/content/3.png)
+![3](https://github.com/pape-barro/eight_chan_lorawan_edge_gateway/content/3.png)
 
 It is recommended to connect the necessary signals using wires that are as short possible in order to prevent communication disorders.
 ```
@@ -62,7 +62,7 @@ Installation
 ------------
 ```
 $ cd /opt/
-$ sudo git clone https://github.com/pape-barro/edge-gateway.git
+$ sudo git clone https://github.com/pape-barro/edge-gateway.git ./edge-gateway
 $ cd /opt/edge-gateway/
 $ sudo make
 $ sudo make install
@@ -105,14 +105,14 @@ $ cat /etc/os-release
 To start service (should already be started at boot if you done make install and rebooted of course), stop service or look service status:
 ------------------------------------------------------------------------------------------------------------------------------------------
 ```
-$ sudo systemctl start single_chan_pkt_fwd
-$ sudo systemctl stop single_chan_pkt_fwd
-$ sudo systemctl status single_chan_pkt_fwd
+$ sudo systemctl start edge-gateway
+$ sudo systemctl stop edge-gateway
+$ sudo systemctl status edge-gateway
 ```
 To see packet forwarder log in real time:
 -------------------------------
 ```
-$ sudo journalctl -f -u single_chan_pkt_fwd
+$ sudo journalctl -f -u edge-gateway
 ```
 To see LoRa-gateway-bridge log-output:
 -------------------------------
