@@ -44,18 +44,18 @@ Hardware Connection:
 ```
 In order to establish a SPI connection between the iC880A-SPI and the host system, the
 following pins have to be used as minimum wiring set:
-
+```
 
 ![1](https://github.com/pape-barro/eight_chan_lorawan_edge_gateway/blob/master/content/1.png)
-
+```
 The power pins (21, 22) have to be connected to a power source that is able to provide more than 700 mA.
-
+```
 ![2](https://github.com/pape-barro/eight_chan_lorawan_edge_gateway/content/2.png)
-
+```
 Therefore it is recommended to choose a proper power supply that is able to supply the iC880A-SPI and the host system (e.g. Raspberry PI) at the same time.
-
+```
 ![3](https://github.com/pape-barro/eight_chan_lorawan_edge_gateway/content/3.png)
-
+```
 It is recommended to connect the necessary signals using wires that are as short possible in order to prevent communication disorders.
 ```
 Installation
