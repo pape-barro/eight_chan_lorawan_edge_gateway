@@ -62,7 +62,7 @@ Installation
 ------------
 ```
 $ cd /opt/
-$ sudo git clone https://github.com/pape-barro/edge-gateway.git ./edge-gateway
+$ sudo git clone https://github.com/pape-barro/packet1.git ./edge-gateway
 $ cd /opt/edge-gateway/
 $ sudo make
 $ sudo make install
